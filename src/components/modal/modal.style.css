@@ -1,0 +1,16 @@
+.modaloverlay {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.199);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
