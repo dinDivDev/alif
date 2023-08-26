@@ -27,14 +27,15 @@ export const entrees = [
     description:
       " Lagman is a traditional Central Asian noodle dish made with hand-pulled noodles. It features a flavorful meat-based broth with chunks of beef or lamb, along with a variety of vegetables and aromatic spices.",
     price: "$16",
-    ingredients: "ingredients ON TEST",
+    ingredients:
+      "Stewed beef, napa peppers, long beans over long and tick hand made noodles",
     qty: 0,
   },
   {
     index: 2,
     img: guru,
     name: "Guru Lagman",
-    description:
+    ingredients:
       "Guru Laghman is a traditional Central Asian dish, popularly known as Laghman, consisting of hand-pulled noodles served with stir-fried vegetables and meat in a flavorful sauce. It is a delicious and satisfying meal often enjoyed across the region and beyond.",
     price: "$17",
     qty: 0,
@@ -43,7 +44,7 @@ export const entrees = [
     index: 3,
     img: boso,
     name: "Boso Lagman",
-    description:
+    ingredients:
       "Fried Lagman is a variation of the traditional Central Asian dish Laghman, where the hand-pulled noodles and stir-fried vegetables and meat are pan-fried to create a crispy and flavorful texture. It is a delicious and popular twist on the classic Laghman, enjoyed by many for its unique taste and presentation.",
     price: "$17",
     qty: 0,
@@ -52,7 +53,7 @@ export const entrees = [
     index: 4,
     img: veganLagman,
     name: "Lagman Vegan",
-    description:
+    ingredients:
       "Vegan Lagman is a plant-based version of the traditional Central Asian dish Laghman, where the hand-pulled noodles are typically made without eggs and the dish is prepared with a variety of colorful vegetables, such as bell peppers, carrots, and cabbage, in a flavorful vegan sauce. It offers a delicious and satisfying vegan option that captures the essence of the original dish while catering to a plant-based diet.",
     price: "$16",
     qty: 0,
@@ -61,7 +62,7 @@ export const entrees = [
     index: 5,
     img: mushuro,
     name: "Mushuro",
-    description: "",
+    ingredients: "",
     price: "$18",
     qty: 0,
   },
@@ -78,7 +79,7 @@ export const entrees = [
     index: 7,
     img: ganFan,
     name: "Guru Gan Fan",
-    description:
+    ingredients:
       "Ganfan, also known as Dry Wok or Dry Pot, is a popular Chinese dish featuring a flavorful and spicy combination of stir-fried meat (usually chicken, beef, or seafood), vegetables, and various seasonings. The dish is named Ganfan because it is typically served in a dry wok or dry pot without a lot of sauce, allowing the ingredients to develop a delicious caramelized flavor.",
     price: "$17",
     qty: 0,
@@ -87,6 +88,8 @@ export const entrees = [
     index: 8,
     img: dabandzhi,
     name: "Dabandzhi",
+    ingredients:
+      "It's Uighur chicken dish with vegetables served only with rice",
     price: "$17",
     qty: 0,
   },
@@ -94,6 +97,7 @@ export const entrees = [
     index: 9,
     img: jarovnya,
     name: "Jarovnya",
+    ingredients: "Frien beef with vegetables",
     price: "$16",
     qty: 0,
   },
@@ -101,7 +105,7 @@ export const entrees = [
     index: 10,
     img: plov,
     name: "Plov",
-    description:
+    ingredients:
       "Plov is a traditional rice dish that is popular in various Central Asian and Middle Eastern cuisines. It typically consists of long-grain rice, cooked with tender chunks of meat (such as lamb or beef), carrots, onions, and various aromatic spices, resulting in a flavorful and hearty one-pot meal.",
     price: "$17",
     qty: 0,
@@ -117,7 +121,7 @@ export const entrees = [
     index: 12,
     img: manty,
     name: "Manty",
-    description:
+    ingredients:
       "Manty is a popular traditional dumpling dish in Central Asian cuisine, especially in countries like Uzbekistan, Kazakhstan, and Kyrgyzstan. These dumplings are usually filled with seasoned minced meat (often lamb or beef) and onions, then steamed to perfection, creating a delicious and savory treat often served with a side of yogurt or sour cream.",
     price: "$17",
     qty: 0,
@@ -127,13 +131,14 @@ export const entrees = [
     img: besh,
     name: "Gulchatay",
     price: "$20",
+    ingredients: "",
     qty: 0,
   },
   {
     index: 14,
     img: kuurdak,
     name: "Kuurdak (Lamb)",
-    description:
+    ingredients:
       "Kuurdak is a traditional Central Asian dish made with bite-sized pieces of lamb or beef, onions, and potatoes, fried in a wok or skillet until tender and flavorful. It is a hearty and delicious dish often enjoyed with fresh herbs and served with flatbread or rice.",
     price: "$25",
     qty: 0,

@@ -7,22 +7,24 @@ import Footer from "../../components/footer/Footer.jsx";
 
 const SaladsPage = () => {
   return (
-    <div className="product-description__container">
+    <>
       <NavBar></NavBar>
-      {salads.map((el, index) => {
-        return (
-          <ProductDescription
-            img={el.img}
-            index={index}
-            ingredients={el.ingredients}
-            qty={el.qty}
-            price={el.price}
-            name={el.name}
-          />
-        );
-      })}
+      <div className="product-description__container">
+        {salads.map((el, index) => {
+          return (
+            <ProductDescription
+              img={el.img}
+              index={index}
+              ingredients={el.ingredients}
+              qty={el.qty}
+              price={el.price}
+              name={el.name}
+            />
+          );
+        })}
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

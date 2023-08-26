@@ -7,23 +7,25 @@ import NavBar from "../../components/navigation/NavBar.jsx";
 
 const BreakFastPage = () => {
   return (
-    <div className="product-description__container">
+    <>
       <NavBar></NavBar>
-      {breakfast.map((el, index) => {
-        return (
-          <ProductDescription
-            img={el.img}
-            index={index}
-            // description={el.description}
-            ingredients={el.ingredients}
-            qty={el.qty}
-            price={el.price}
-            name={el.name}
-          />
-        );
-      })}
+      <div className="product-description__container">
+        {breakfast.map((el, index) => {
+          return (
+            <ProductDescription
+              img={el.img}
+              index={index}
+              // description={el.description}
+              ingredients={el.ingredients}
+              qty={el.qty}
+              price={el.price}
+              name={el.name}
+            />
+          );
+        })}
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

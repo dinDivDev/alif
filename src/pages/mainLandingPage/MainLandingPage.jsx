@@ -10,21 +10,23 @@ const MainLandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <NavBar></NavBar>
-      <Link to="/">
-        <div className="overlay"></div>
-        <div className="home-page__video">
-          <video src={lagmanVideo} autoPlay loop muted></video>
-          <div className="content">
-            <h1>
-              Welcome to <span>Cafe Alif</span>
-            </h1>
+      <div>
+        <Link to="/">
+          <div className="overlay"></div>
+          <div className="home-page__video">
+            <video src={lagmanVideo} autoPlay loop muted></video>
+            <div className="content">
+              <h1>
+                Welcome to <span>Cafe Alif</span>
+              </h1>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

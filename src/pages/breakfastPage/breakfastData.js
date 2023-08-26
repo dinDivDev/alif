@@ -8,12 +8,6 @@ import ovsyanka from "./assets/ovsyanka.jpg";
 
 export const breakfast = [
   {
-    index: 1,
-    img: ovsyanka,
-    name: "Porridge",
-    price: "$10",
-  },
-  {
     index: 2,
     img: blinchiki,
     name: "Blinchiki",
@@ -30,5 +24,11 @@ export const breakfast = [
     img: oladushki,
     name: "Oladushki",
     price: "$6",
+  },
+  {
+    index: 1,
+    img: ovsyanka,
+    name: "Porridge",
+    price: "$10",
   },
 ];

@@ -7,23 +7,25 @@ import Footer from "../../components/footer/Footer.jsx";
 
 const SoupsPage = () => {
   return (
-    <div className="product-description__container">
+    <>
       <NavBar></NavBar>
-      {soups.map((el, index) => {
-        return (
-          <ProductDescription
-            img={el.img}
-            index={index}
-            // description={el.description}
-            ingredients={el.ingredients}
-            qty={el.qty}
-            price={el.price}
-            name={el.name}
-          />
-        );
-      })}
+      <div className="product-description__container">
+        {soups.map((el, index) => {
+          return (
+            <ProductDescription
+              img={el.img}
+              index={index}
+              // description={el.description}
+              ingredients={el.ingredients}
+              qty={el.qty}
+              price={el.price}
+              name={el.name}
+            />
+          );
+        })}
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

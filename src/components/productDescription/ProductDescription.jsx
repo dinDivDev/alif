@@ -26,14 +26,14 @@ const ProductDescription = (props) => {
           loading="lazy"
         ></img>
 
-        <div className="product-description__info">
-          <div>
-            <p className="product-name">{props.name}</p>
+        <div className="product-description__price-info">
+          <p className="product-price">{props.price}</p>
+        </div>
 
-            {/* <p className="product-description">{props.description}</p> */}
-            {/* <div> */}
-            <p className="product-price">{props.price}</p>
-            {/* </div> */}
+        <div className="product-description__info">
+          <div className="product-description__name-info">
+            <p className="product-name">{props.name}</p>
+            <button onClick={() => setIsOpen(true)}>View description</button>
           </div>
         </div>
         {/* <div key={props.index} className="product-description__quantity-box">
@@ -46,14 +46,15 @@ const ProductDescription = (props) => {
           </button>
         </div> */}
 
-        <div className="product-description__modal">
+        {/* <div className="product-description__modal">
           <a onClick={() => setIsOpen(true)}>View ingredients</a>
-        </div>
+        </div> */}
         {isOpen && (
           <Modal
             className="modaloverlay"
             onClose={() => setIsOpen(false)}
             ingredients={props.ingredients}
+            description={props.description}
             boxClassName="product-description__product-modal"
           />
         )}

@@ -25,25 +25,27 @@ const EntreesPage = () => {
   };
 
   return (
-    <div className="product-description__container">
+    <>
       <NavBar></NavBar>
-      {entrees.map((el, index) => {
-        return (
-          <ProductDescription
-            img={el.img}
-            index={index}
-            // description={el.description}
-            onDecrementHandler={() => onDecrementHandler(index)}
-            onIncrementHandler={() => onIncrementHandler(index)}
-            ingredients={el.ingredients}
-            qty={el.qty}
-            price={el.price}
-            name={el.name}
-          />
-        );
-      })}
+      <div className="product-description__container">
+        {entrees.map((el, index) => {
+          return (
+            <ProductDescription
+              img={el.img}
+              index={index}
+              description={el.description}
+              onDecrementHandler={() => onDecrementHandler(index)}
+              onIncrementHandler={() => onIncrementHandler(index)}
+              ingredients={el.ingredients}
+              qty={el.qty}
+              price={el.price}
+              name={el.name}
+            />
+          );
+        })}
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

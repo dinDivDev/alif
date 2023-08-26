@@ -7,23 +7,25 @@ import NavBar from "../../components/navigation/NavBar.jsx";
 
 const DrinksPage = () => {
   return (
-    <div className="product-description__container">
+    <>
       <NavBar></NavBar>
-      {drinks.map((el, index) => {
-        return (
-          <ProductDescription
-            img={el.img}
-            index={index}
-            // description={el.description}
-            ingredients={el.ingredients}
-            qty={el.qty}
-            price={el.price}
-            name={el.name}
-          />
-        );
-      })}
+      <div className="product-description__container">
+        {drinks.map((el, index) => {
+          return (
+            <ProductDescription
+              img={el.img}
+              index={index}
+              // description={el.description}
+              ingredients={el.ingredients}
+              qty={el.qty}
+              price={el.price}
+              name={el.name}
+            />
+          );
+        })}
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

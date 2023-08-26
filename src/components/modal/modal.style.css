@@ -13,4 +13,73 @@
   background-color: rgba(128, 128, 128, 0.199);
   backdrop-filter: blur(5px);
   z-index: 1;
+  text-align: center;
+}
+
+.product-description__product-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-description__product-modal p {
+  color: rgb(95, 94, 94);
+  width: 80%;
+}
+
+@media screen and (max-width: 844px) {
+  .product-description__product-modal p {
+    color: rgb(95, 94, 94);
+    width: 90%;
+  }
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid white;
+  background-color: #34923b;
+  color: white;
+}
+
+@media screen and (max-width: 844px) {
+  .close-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: #34923b;
+    color: white;
+  }
+}
+
+.halal_logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 14%;
+  width: 10%;
+}
+
+@media screen and (max-width: 844px) {
+  .halal_logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 10%;
+    width: 20%;
+  }
 }
