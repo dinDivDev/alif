@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <ul className="navbar__options">
-        <Link to="/home" className="navbar__logo__container">
+        <Link to="/" className="navbar__logo__container">
           <img
             rel="preload"
             src={logo}
@@ -23,15 +23,17 @@ const NavBar = () => {
           />
         </Link>
 
-        <Link to="/menu">
-          <li>Menu</li>
-        </Link>
-        <Link to="/contactus">
+        <div className="navbar__options--secondary">
+          <Link to="/menu">
+            <li>Menu</li>
+          </Link>
+          {/* <Link to="/contactus">
           <li>Contact Us</li>
-        </Link>
-        <Link to="/location">
-          <li>Find Us</li>
-        </Link>
+        </Link> */}
+          <Link to="/findus">
+            <li>Find / Contact Us</li>
+          </Link>
+        </div>
       </ul>
       <div className="navbar-drawer">
         <button className="navbar-drawer__button" onClick={onClickOpenMenu}>
@@ -42,11 +44,11 @@ const NavBar = () => {
             <Link to="/menu">
               <li>Menu</li>
             </Link>
-            <Link to="/contact">
+            {/* <Link to="/contact">
               <li>Contact Us</li>
-            </Link>
-            <Link to="/location">
-              <li>Find Us</li>
+            </Link> */}
+            <Link to="/findus">
+              <li>Find / Contact Us</li>
             </Link>
           </ul>
         )}

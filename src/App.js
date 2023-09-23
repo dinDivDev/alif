@@ -9,6 +9,7 @@ import DrinksPage from "./pages/drinkPage/DrinksPage";
 import BakeryPage from "./pages/bakeryPage/BakeryPage";
 import SaladsPage from "./pages/saladsPage/SaladsPage";
 import SoupsPage from "./pages/soupsPage/SoupsPage";
+import FindUs from "./components/findUs/FindUs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/salads" element={<SaladsPage />}></Route>
       <Route path="/soups" element={<SoupsPage />}></Route>
       <Route path="/contactus" element={<ContactUs />}></Route>
+      <Route path="/findus" element={<FindUs />}></Route>
     </Routes>
   );
 }

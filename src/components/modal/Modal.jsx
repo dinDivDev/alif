@@ -36,7 +36,7 @@ const Modal = ({
             <p> {ingredients}</p>
             <img className="halal_logo" src={halalLogo} />
             <button className="close-btn" onClick={onClose}>
-              x
+              ✖️
             </button>
           </div>
         </div>
